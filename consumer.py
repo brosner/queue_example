@@ -23,7 +23,6 @@ def main():
         queue = "messages",
         exchange = "messages",
         routing_key = "awesome",
-        exchange_type = "fanout",
     )
     
     consumer.register_callback(worker_callback)
